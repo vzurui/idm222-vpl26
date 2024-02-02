@@ -1,0 +1,31 @@
+body {
+    background-color: #F4ECEC;
+    color: #440909;
+    margin: 2em 3em;
+}
+
+li {
+    line-height: 1.6;
+    font-size: 110%;
+}
+
+nav {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 1em 0.5em;
+    word-spacing: 0.5em;
+}
+
+footer {
+    margin: 5em 0 0 0;
+    text-align: center;
+}
+
+#projects {
+    background-color: lightblue;
+    border: 1px solid red;
+    text-align: center;
+    padding: 1em 0 1em 0;
+
+}
