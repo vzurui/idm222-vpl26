@@ -1,7 +1,17 @@
 body {
     background-color: #F4ECEC;
     color: #440909;
-    margin: 2em 3em;
+    margin: 3.5em 3em 2em;
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    font-size: 250%;
+    text-align: center;
+    margin: 1em auto;
 }
 
 li {
