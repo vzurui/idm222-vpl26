@@ -38,8 +38,25 @@ footer {
     text-align: center;
 }
 
+a.portfolio-link:link {
+    color: #F4ECEC;
+}
+
+a.portfolio-link:hover {
+    color: #7A635F;
+}
+
+a.portfolio-link:visited {
+    color: #392525;
+}
+
+a.portfolio-link:link {
+    color: #F4ECEC;
+}
+
 a:link {
     color: #CB2929;
+    text-decoration: none;
 }
 
 a:visited {
