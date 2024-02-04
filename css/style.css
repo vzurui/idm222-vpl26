@@ -6,6 +6,7 @@ body {
 
 p {
     text-align: justify;
+    line-height: 15px;
 }
 
 h1 {
@@ -14,9 +15,14 @@ h1 {
     margin: 1em auto;
 }
 
+h2 {
+    margin: 1.5em 0 0 0;
+    text-decoration: underline;
+}
+
 li {
-    line-height: 1.6;
-    font-size: 110%;
+    line-height: 1.7;
+    font-size: 105%;
 }
 
 nav {
@@ -32,10 +38,29 @@ footer {
     text-align: center;
 }
 
+a:link {
+    color: #CB2929;
+}
+
+a:visited {
+    color: #392525;
+}
+
+a:hover {
+    color: #7A635F;
+}
+
+#resume-top p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.experience {
+    margin: 2.75em auto;
+}
 #projects {
     background-color: lightblue;
     border: 1px solid red;
     text-align: center;
     padding: 1em 0 1em 0;
-
 }
