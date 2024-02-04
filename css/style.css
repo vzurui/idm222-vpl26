@@ -29,7 +29,7 @@ nav {
     font-size: 1.5em;
     text-align: center;
     padding: 0.5em;
-    margin: 1em 0.5em;
+    margin: -1em 0 2em 0;
     word-spacing: 0.5em;
 }
 
@@ -50,6 +50,37 @@ a:hover {
     color: #7A635F;
 }
 
+form {
+    margin: 3em 0 1.5em 0;
+    letter-spacing: 0.4px;
+}
+
+input[type=text], select, textarea { /* for styling contact form */
+    font-family: "almarai", Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+
+input[type=submit] { /* for styling contact "submit" page */
+    background-color: #CB2929;
+    color: white;
+    font-family: "almarai", Arial, Helvetica, sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+input[type=submit]:hover { /* for different hover color on contact "submit" button */
+    background-color: #7A635F;
+  }
+
 #resume-top p {
     font-size: 16px;
     text-align: center;
@@ -58,9 +89,33 @@ a:hover {
 .experience {
     margin: 2.75em auto;
 }
+
+.form {
+    text-align: center;
+    line-height: 20px;
+    margin: em auto;
+}
+
+.portfolio-button {
+    background-color: #CB2929;
+    text-align: center;
+    line-height: 80px;
+    border: 5px solid #7A635F;
+    border-radius: 30px;
+    color: #F4ECEC;
+    font-size: 25px;
+    letter-spacing: 4px;
+    line-height: 1;
+    margin: 3em 2em;
+    padding: 30px 0;
+}
+
+/*
 #projects {
     background-color: lightblue;
     border: 1px solid red;
     text-align: center;
     padding: 1em 0 1em 0;
 }
+
+/*
