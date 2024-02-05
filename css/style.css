@@ -124,6 +124,7 @@ a:hover {
 }
 
 form {
+    font-family: "almarai", Arial, Helvetica, sans-serif;
     margin: 3em 0 1.5em 0;
     letter-spacing: 0.4px;
 }
