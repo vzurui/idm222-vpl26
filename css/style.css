@@ -46,25 +46,38 @@ body {
 }
 
 p {
+    font-family: 'Almarai', Arial, Helvetica, sans-serif;
     text-align: justify;
-    line-height: 15px;
+    line-height: 20px;
 }
 
 h1 {
+    color:#392525;
     font-size: 250%;
     font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
     text-align: center;
     margin: 1em auto;
 }
 
 h2 {
+    font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
     margin: 1.5em 0 0 0;
+    letter-spacing: 1px;
     text-decoration: underline;
+}
+
+h3 {
+    font-size: 150%;
+    font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
+    margin: 2em 0 1em 0;
+    text-align: center;
 }
 
 li {
     line-height: 1.7;
     font-size: 105%;
+    font-family: 'Almarai', Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -143,6 +156,7 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 
 #resume-top p {
     font-size: 16px;
+    line-height: 10px;
     text-align: center;
 }
 
@@ -170,12 +184,12 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
     padding: 30px 0;
 }
 
-/*
-#projects {
-    background-color: lightblue;
-    border: 1px solid red;
-    text-align: center;
-    padding: 1em 0 1em 0;
+.portfolio img {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
 }
 
-/*
+.portfolio img:hover {
+    opacity: 80%;
+}
