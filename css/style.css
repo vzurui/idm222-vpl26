@@ -1,3 +1,44 @@
+@font-face {
+    font-family: 'almarai';
+    src: url(../fonts/Almarai/Almarai-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'almarai';
+    src: url('Almarai-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'almarai';
+    src: url('Almarai-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'almarai';
+    src: url('Almarai-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'urbanist';
+    src: url('../fonts/Urbanist/Urbanist-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
     background-color: #F4ECEC;
     color: #440909;
@@ -11,6 +52,7 @@ p {
 
 h1 {
     font-size: 250%;
+    font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     margin: 1em auto;
 }
@@ -44,6 +86,7 @@ a.portfolio-link:link {
 
 a.portfolio-link:hover {
     color: #7A635F;
+    text-decoration: underline;
 }
 
 a.portfolio-link:visited {
@@ -110,7 +153,7 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 .form {
     text-align: center;
     line-height: 20px;
-    margin: em auto;
+    margin: 1em auto;
 }
 
 .portfolio-button {
