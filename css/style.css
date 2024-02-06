@@ -40,7 +40,7 @@
 
 
 body {
-    background-color: #F4ECEC;
+    background-color: #FFF5EE;
     color: #440909;
     margin: 3.5em 3em 2em;
 }
@@ -195,4 +195,9 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 
 .portfolio img:hover {
     opacity: 80%;
+}
+
+header {
+    border-bottom: 3px solid #872522;
+    margin: 0 0 3em 0;
 }
