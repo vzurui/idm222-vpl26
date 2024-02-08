@@ -38,10 +38,23 @@
     font-display: swap;
 }
 
+:root {
+    --off-white: #FFF5EE;
+    --cocoa-brown: #392525;
+    --aubergine: #440909;
+    --soft-peach: #F4ECEC;
+    --russett: #7A635F;
+    --persian-red: #CB2929;
+    --burnt-umber: #872522;
+
+    --font-title: 'urbanist';
+    --font-text: 'Almarai';
+}
+
 
 body {
-    background-color: #FFF5EE;
-    color: #440909;
+    background-color: var(--off-white);
+    color: var(--aubergine);
     margin: 3.5em 3em 2em;
 }
 
@@ -52,7 +65,7 @@ p {
 }
 
 h1 {
-    color:#392525;
+    color: var(--cocoa-brown);
     font-size: 250%;
     font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 3px;
@@ -95,34 +108,34 @@ footer {
 }
 
 a.portfolio-link:link {
-    color: #F4ECEC;
+    color: var(--soft-peach);
     font-family: 'urbanist', Arial, Helvetica, sans-serif;
 }
 
 a.portfolio-link:hover {
-    color: #7A635F;
+    color: var(--russett);
     text-decoration: underline;
 }
 
 a.portfolio-link:visited {
-    color: #392525;
+    color: var(--cocoa-brown);
 }
 
 a.portfolio-link:link {
-    color: #F4ECEC;
+    color: var(--soft-peach);
 }
 
 a:link {
-    color: #CB2929;
+    color: var(--persian-red);
     text-decoration: none;
 }
 
 a:visited {
-    color: #392525;
+    color: var(--cocoa-brown);
 }
 
 a:hover {
-    color: #7A635F;
+    color: var(--russett);
 }
 
 form {
@@ -144,7 +157,7 @@ input[type=text], select, textarea { /* for styling contact form */
   }
 
 input[type=submit] { /* for styling contact "submit" page */
-    background-color: #CB2929;
+    background-color: var(--persian-red);
     color: white;
     font-family: "almarai", Arial, Helvetica, sans-serif;
     padding: 12px 20px;
@@ -154,7 +167,7 @@ input[type=submit] { /* for styling contact "submit" page */
   }
 
 input[type=submit]:hover { /* for different hover color on contact "submit" button */
-    background-color: #7A635F;
+    background-color: var(--russett);
   }
 
 #resume-top p {
@@ -174,12 +187,12 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 }
 
 .portfolio-button {
-    background-color: #CB2929;
+    background-color: var(--persian-red);
     text-align: center;
     line-height: 80px;
-    border: 5px solid #7A635F;
+    border: 5px solid var(--russett);
     border-radius: 30px;
-    color: #F4ECEC;
+    color: var(--soft-peach);
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 1;
@@ -198,6 +211,6 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 }
 
 header {
-    border-bottom: 3px solid #872522;
+    border-bottom: 3px solid var(--burnt-umber);
     margin: 0 0 3em 0;
 }
