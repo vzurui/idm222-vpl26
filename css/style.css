@@ -38,6 +38,10 @@
     font-display: swap;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --off-white: #FFF5EE;
     --cocoa-brown: #392525;
@@ -56,6 +60,7 @@ body {
     background-color: var(--off-white);
     color: var(--aubergine);
     margin: 3.5em 3em 2em;
+    max-width: 30ch;
 }
 
 p {
@@ -107,6 +112,12 @@ footer {
     text-align: center;
 }
 
+form {
+    font-family: "almarai", Arial, Helvetica, sans-serif;
+    margin: 3em 0 1.5em 0;
+    letter-spacing: 0.4px;
+}
+
 a.portfolio-link:link {
     color: var(--soft-peach);
     font-family: 'urbanist', Arial, Helvetica, sans-serif;
@@ -136,12 +147,6 @@ a:visited {
 
 a:hover {
     color: var(--russett);
-}
-
-form {
-    font-family: "almarai", Arial, Helvetica, sans-serif;
-    margin: 3em 0 1.5em 0;
-    letter-spacing: 0.4px;
 }
 
 input[type=text], select, textarea { /* for styling contact form */
