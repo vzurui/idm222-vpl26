@@ -49,7 +49,7 @@
     --cocoa-brown: #392525;
     --aubergine: #440909;
     --soft-peach: #F4ECEC;
-    --russett: #7A635F;
+    --deep-coffee: #6D443C;
     --persian-red: #CB2929;
     --burnt-umber: #872522;
 
@@ -57,6 +57,9 @@
     --font-text: 'Almarai';
 }
 
+html {
+    margin: 0;
+}
 
 body {
     background-color: var(--off-white);
@@ -65,14 +68,14 @@ body {
 }
 
 p {
-    font-family: 'anek devanagari', Arial, Helvetica, sans-serif;
+    font-family: 'almarai', Arial, Helvetica, sans-serif;
     text-align: justify;
     line-height: 20px;
     max-width: 45ch;
 }
 
 h1 {
-    color: var(--cocoa-brown);
+    color: var(--aubergine);
     font-size: 250%;
     font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 3px;
@@ -110,8 +113,12 @@ nav {
 }
 
 footer {
-    margin: 5em 0 0 0;
-    text-align: center;
+    color: var(--off-white);
+    background-color: var(--burnt-umber);
+    font-family: 'urbanist', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px;
+    align-content: center;
 }
 
 form {
@@ -132,7 +139,7 @@ a.portfolio-link:link {
 }
 
 a.portfolio-link:hover {
-    color: var(--russett);
+    color: var(--deep-coffee);
     text-decoration: underline;
 }
 
@@ -154,7 +161,7 @@ a:visited {
 }
 
 a:hover {
-    color: var(--russett);
+    color: var(--deep-coffee);
 }
 
 input[type=text], select, textarea { /* for styling contact form */
@@ -180,7 +187,7 @@ input[type=submit] { /* for styling contact "submit" page */
   }
 
 input[type=submit]:hover { /* for different hover color on contact "submit" button */
-    background-color: var(--russett);
+    background-color: var(--deep-coffee);
   }
 
 #resume-top p {
@@ -203,14 +210,17 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
     background-color: var(--persian-red);
     text-align: center;
     line-height: 80px;
-    border: 5px solid var(--russett);
-    border-radius: 30px;
+    border-radius: 35px;
     color: var(--soft-peach);
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 1;
-    margin: 3em 2em;
+    margin: 2em 2em;
     padding: 30px 0;
+}
+
+.portfolio-button:hover {
+    background-color: var(--deep-coffee);
 }
 
 .portfolio img {
@@ -228,6 +238,10 @@ hr.solid {
     margin: -1em -4em 0 -4em;
     
 }
+
+/* .home-doodle {
+    background-color: cyan;
+} */
 
 /* about page media screeens */
 
