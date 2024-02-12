@@ -57,14 +57,10 @@
     --font-text: 'Almarai';
 }
 
-html {
-    margin: 0;
-}
-
 body {
     background-color: var(--off-white);
     color: var(--aubergine);
-    margin: 3.5em 3em 2em;
+    margin: 3.5em 2em -2em 2em;
 }
 
 p {
@@ -116,14 +112,15 @@ footer {
     color: var(--off-white);
     background-color: var(--burnt-umber);
     font-family: 'urbanist', Arial, Helvetica, sans-serif;
-    margin: 0;
     padding: 30px;
-    align-content: center;
+    text-align: center;
+    margin: 0 -2em;
+    border-top: var(--cocoa-brown) solid 6px;
 }
 
 form {
     font-family: "almarai", Arial, Helvetica, sans-serif;
-    margin: 3em 0 1.5em 0;
+    margin: 6em 0;
     letter-spacing: 0.4px;
 }
 
@@ -200,10 +197,10 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
     margin: 2.75em auto;
 }
 
-.form {
+.form-text {
     text-align: center;
     line-height: 20px;
-    margin: 1em auto;
+    margin: 4em 0 -2em 0;
 }
 
 .portfolio-button {
@@ -221,6 +218,7 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 
 .portfolio-button:hover {
     background-color: var(--deep-coffee);
+    scale: 105%;
 }
 
 .portfolio img {
@@ -239,9 +237,6 @@ hr.solid {
     
 }
 
-/* .home-doodle {
-    background-color: cyan;
-} */
 
 /* about page media screeens */
 
@@ -254,8 +249,39 @@ and (min-width: 1000px) {
 }
 
 @media screen
-and (min-width: 1400px) {
+and (min-width: 1200px) {
     .hi {
         background: yellow;
+    }
+}
+
+/* portfolio buttons page media screens */
+
+@media screen 
+and (min-width: 1200px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 3em;
+    }
+
+    .portfolio-button {
+        font-size: 40px;
+        padding: 300px 50px;
+        line-height: 1em;
+        margin: 1em;
+    }
+}
+
+
+/* contact form media queries */
+
+@media screen 
+and (min-width: 1000px) {
+    .contact-fill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        margin: 3em 2em;
     }
 }
