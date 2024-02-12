@@ -101,10 +101,10 @@ li {
 
 nav {
     font-size: 1em;
-    font-family: "almarai", Arial, Helvetica, sans-serif;
+    font-family: 'urbanist', Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 0.5em;
-    margin: -2em 0 -0.5em 0;
+    margin: -1em 0 -2em 0;
     word-spacing: 0.2em;
 }
 
@@ -237,8 +237,22 @@ hr.solid {
     
 }
 
+section.projects {
+    margin: 8em 0;
+}
 
-/* about page media screeens */
+/* home page media queries */
+
+@media screen
+and (min-width: 1200px) {
+    .search {
+        font-size: 200%;
+        word-spacing: 40px;
+        text-align: right;
+    }
+}
+
+/* about page media screens */
 
 @media screen 
 and (min-width: 1000px) {
