@@ -38,6 +38,8 @@
     font-display: swap;
 }
 
+/* fonts used above */
+
 * {
     box-sizing: border-box;
 }
@@ -51,7 +53,7 @@
     --persian-red: #CB2929;
     --burnt-umber: #872522;
 
-    --font-title: 'urbanist';
+    --font-title: 'urbanist', Georgia, 'Times New Roman', Times, serif;
     --font-text: 'Almarai';
 }
 
@@ -60,13 +62,13 @@ body {
     background-color: var(--off-white);
     color: var(--aubergine);
     margin: 3.5em 3em 2em;
-    max-width: 30ch;
 }
 
 p {
-    font-family: 'Almarai', Arial, Helvetica, sans-serif;
+    font-family: 'anek devanagari', Arial, Helvetica, sans-serif;
     text-align: justify;
     line-height: 20px;
+    max-width: 45ch;
 }
 
 h1 {
@@ -74,8 +76,8 @@ h1 {
     font-size: 250%;
     font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 3px;
-    text-align: center;
-    margin: 1em auto;
+    text-align: left;
+    margin: -1em 0 1em -0.5em;
 }
 
 h2 {
@@ -99,12 +101,12 @@ li {
 }
 
 nav {
-    font-size: 1.5em;
+    font-size: 1em;
     font-family: "almarai", Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 0.5em;
-    margin: -0.5em 0 -0.5em 0;
-    word-spacing: 0.4em;
+    margin: -2em 0 -0.5em 0;
+    word-spacing: 0.2em;
 }
 
 footer {
@@ -117,6 +119,12 @@ form {
     margin: 3em 0 1.5em 0;
     letter-spacing: 0.4px;
 }
+
+header {
+    /* border-bottom: 3px solid var(--burnt-umber); */
+    margin: 0 0 3em 0;
+}
+
 
 a.portfolio-link:link {
     color: var(--soft-peach);
@@ -215,7 +223,25 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
     opacity: 80%;
 }
 
-header {
-    border-bottom: 3px solid var(--burnt-umber);
-    margin: 0 0 3em 0;
+hr.solid {
+    border-top: var(--burnt-umber) solid 5px;
+    margin: -1em -4em 0 -4em;
+    
+}
+
+/* about page media screeens */
+
+@media screen 
+and (min-width: 1000px) {
+    .hi {
+        background: red;
+        font-size: 400%;
+    }
+}
+
+@media screen
+and (min-width: 1400px) {
+    .hi {
+        background: yellow;
+    }
 }
