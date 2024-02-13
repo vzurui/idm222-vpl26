@@ -140,9 +140,8 @@ footer {
 }
 
 form {
-    font-family: "almarai", Arial, Helvetica, sans-serif;
+    font-family: var(--font-text);
     margin: 6em 0;
-    letter-spacing: 0.4px;
 }
 
 header {
@@ -305,7 +304,20 @@ section.projects {
 hr.solid {
     border-top: var(--burnt-umber) solid 5px;
     margin: -1em -4em 0 -4em;
+    animation: slide-in linear 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
+
+@keyframes slide-in {
+    0% {
+        margin-left: 0%;
+    }
+    0% {
+        margin-right: 100%;
+    }
+}
+
 
 
 #home-welcome {
@@ -410,7 +422,7 @@ and (min-width: 1200px) {
 and (min-width: 1000px) {
     .hi {
         background: red;
-        font-size: 400%;
+        font-size: 250%;
     }
 }
 
@@ -418,6 +430,7 @@ and (min-width: 1000px) {
 and (min-width: 1200px) {
     .hi {
         background: yellow;
+        font-size: 350%;
     }
 }
 
@@ -449,6 +462,10 @@ and (min-width: 1000px) {
         grid-template-columns: 1fr 1fr;
         justify-content: space-evenly;
         margin: 3em 2em;
+    }
+
+    .form-text {
+        align-self: center;
     }
 }
 
