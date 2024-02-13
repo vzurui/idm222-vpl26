@@ -38,6 +38,23 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'urbanist';
+    src: url('/fonts/urbanist/Urbanist-Light.ttf') format('truetype');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url('../fonts/Open_Sans/static/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
 /* fonts used above */
 
 * {
@@ -64,7 +81,7 @@ body {
 }
 
 p {
-    font-family: 'almarai', Arial, Helvetica, sans-serif;
+    font-family: 'open-sans', Arial, Helvetica, sans-serif;
     text-align: justify;
     line-height: 20px;
     max-width: 45ch;
@@ -89,7 +106,7 @@ h2 {
 h3 {
     font-size: 150%;
     font-family: 'urbanist', Georgia, 'Times New Roman', Times, serif;
-    margin: 2em 0 1em 0;
+    margin: 1em 0 1em 0;
     text-align: center;
 }
 
@@ -129,23 +146,19 @@ header {
     margin: 0 0 3em 0;
 }
 
-
 a.portfolio-link:link {
     color: var(--soft-peach);
     font-family: 'urbanist', Arial, Helvetica, sans-serif;
+    text-align: left;
 }
 
 a.portfolio-link:hover {
-    color: var(--deep-coffee);
+    color: var(--soft-peach);
     text-decoration: underline;
 }
 
 a.portfolio-link:visited {
     color: var(--cocoa-brown);
-}
-
-a.portfolio-link:link {
-    color: var(--soft-peach);
 }
 
 a:link {
@@ -216,7 +229,7 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
     padding: 30px 0;
 }
 
-.portfolio-button:hover {
+.portfolio-button:hover, .home-portfolio-button:hover {
     background-color: var(--deep-coffee);
     scale: 105%;
 }
@@ -234,12 +247,50 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 hr.solid {
     border-top: var(--burnt-umber) solid 5px;
     margin: -1em -4em 0 -4em;
-    
 }
 
 section.projects {
     margin: 8em 0;
 }
+
+#home-welcome {
+    text-align: center;
+    text-decoration: none;
+    scale: 175%;
+    margin: 0 0 0 3em;
+}
+
+#home-name {
+    scale: 130%;
+    text-align: center;
+    margin: 1em 0 0 8em;
+    text-decoration: none;
+}
+
+#home-portfolio {
+    text-align: right;
+    margin: 0 2em -1em 0;
+    font-size: 120%;
+}
+
+#home-bio {
+   text-align: left; 
+   margin: 6em 0;
+   max-width: 26ch;
+}
+
+.home-portfolio-button {
+    background-color: var(--persian-red);
+    border-radius: 20px;
+    color: var(--soft-peach);
+    font-size: 25px;
+    letter-spacing: 4px;
+    line-height: 0.75;
+    margin: 2em 2em 2em 4em;
+    text-align: right;
+    padding: 30px;
+
+} 
 
 /* home page media queries */
 
@@ -297,5 +348,32 @@ and (min-width: 1000px) {
         grid-template-columns: 1fr 1fr;
         justify-content: space-evenly;
         margin: 3em 2em;
+    }
+}
+
+/* resume layout media queries */ 
+
+@media screen 
+and (min-width: 1000px) {
+    /* .resume-layout {
+        background-color: lightgreen;
+        display: grid;
+        grid-template-columns: 1fr;
+    } */
+
+    #resume-top {
+        display: grid;
+        justify-content: center;
+    }
+
+    .resume-skills {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .project-experience {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
