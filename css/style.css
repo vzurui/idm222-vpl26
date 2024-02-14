@@ -304,7 +304,7 @@ section.projects {
 hr.solid {
     border-top: var(--burnt-umber) solid 5px;
     margin: -1em -4em 0 -4em;
-    animation: slide-in linear 3s;
+    animation: slide-in linear 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
