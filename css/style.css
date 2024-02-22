@@ -319,7 +319,6 @@ hr.solid {
 }
 
 
-
 #home-welcome {
     text-align: center;
     text-decoration: none;
@@ -502,6 +501,7 @@ and (min-width: 1000px) {
 and (min-width: 1000px) {
     .portfolio-illustrator {
         display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px 50px;
     }
 }
