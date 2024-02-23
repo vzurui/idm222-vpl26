@@ -322,8 +322,6 @@ hr.solid {
 #home-welcome {
     text-align: center;
     text-decoration: none;
-    scale: 175%;
-    margin: 0 0 0 3em;
 }
 
 #home-name {
@@ -371,7 +369,7 @@ and (min-width: 400px) {
 @media screen
 and (min-width: 1000px) {
     .search {
-        font-size: 220%;
+        font-size: 20%;
         word-spacing: 15px;
         text-align: right;
     }
