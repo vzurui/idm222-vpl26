@@ -391,7 +391,7 @@ and (min-width: 1000px) {
     background-image: url('../graphics/home_tablet.png');
     background-repeat: no-repeat;
     background-position: 1cm 2.7cm;
-    background-size: 98% 105%;
+    background-size: 98% 10%;
     height: 170vh;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
