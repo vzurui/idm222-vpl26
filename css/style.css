@@ -104,10 +104,10 @@ h2 {
 }
 
 h3 {
-    font-size: 150%;
+    font-size: 200%;
     font-family: var(--font-title);
-    margin: 1em 0 1em 0;
-    text-align: center;
+    margin: 0;
+    text-align: left;
 }
 
 li {
@@ -365,15 +365,49 @@ hr.solid {
 .bio-pfp {
     border-radius: 400px;
     border: 3px solid var(--burnt-umber);
-    object-position: 0.1cm 0.1cm;
-    width: 100%;
+    object-position: 0.08cm 0.08cm;
+    width: 50%;
     height: auto;
-    margin: 1em;
+    margin: 1em 10em;
+}
+
+.full-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 6em 0;
+    justify-items: center;
+}
+
+.headshot {
+    width: 80%;
+    height: auto;
+    margin: 2em 0;
+}
+    /* animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        margin-top: 50%;
+    }
+    100% {
+        opacity: 1;
+        margin-bottom: 0%;
+    }
+} */
+
+.about-bio {
+    max-width: 60ch;
 }
 
 a.about-link:link {
-    text-align: center;
+    font-size: 175%;
+    margin-left: 18em;
 }
+
 /* nav bar media queries */
 
 @media screen
@@ -413,23 +447,6 @@ and (min-width: 1000px) {
     background-size: 85% 138%;
     height: 150vh;
    }
-
-   html {
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-   }
-
-    @keyframes fadeInAnimation {
-    0% {
-        opacity: 20%;
-        filter: blur(10px);
-    }
-    100% {
-        opacity: 100%;
-        filter: blur(0);
-    }
-}
 
    footer {
     margin: 30em -2em 0 -2em;
@@ -475,21 +492,6 @@ and (min-width: 1200px) {
         background-position: 1cm 2.75cm;
         background-size: 100% 180%;
         height: 140vh;
-    }
-    
-    html {
-        animation: fadeInAnimation ease 2s;
-        animation-iteration-count: 1;
-        animation-fill-mode: forwards;
-    }
-    
-    @keyframes fadeInAnimation {
-        0% {
-            filter: blur(5px);
-        }
-        100% {
-            filter: blur(0);
-        }
     }
 
     footer {
