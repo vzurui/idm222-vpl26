@@ -77,14 +77,13 @@
 body {
     background-color: var(--off-white);
     color: var(--aubergine);
-    margin: 3.5em 2em -2em 2em;
+    margin: 3.5em 2em 0 2em;
 }
 
 p {
     font-family: var(--font-text);
     text-align: justify;
     line-height: 20px;
-    max-width: 45ch;
 }
 
 h1 {
@@ -121,7 +120,7 @@ nav {
     font-family: var(--font-title);
     text-align: center;
     padding: 0.5em;
-    margin: -1em 0 -2em 0;
+    margin: -1em 0 -2.2em 0;
     word-spacing: 0.2em;
 }
 
@@ -365,7 +364,7 @@ hr.solid {
 .bio-pfp {
     border-radius: 400px;
     border: 3px solid var(--burnt-umber);
-    object-position: 0.05cm 0.03cm;
+    object-position: 0.05cm 0.08cm;
     width: 50%;
     height: auto;
     margin: 2em 1em;
@@ -382,10 +381,9 @@ hr.solid {
     width: 80%;
     height: auto;
     margin: 2em;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
 } 
     /* animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -404,13 +402,13 @@ hr.solid {
 } */
 
 .about-bio {
-    margin-bottom: 4em;
+    padding: 30px;
+    min-width: 50ch;
 }
 
 a.about-link:link {
-    font-size: 175%;
+    font-size: 150%;
     text-align: center;
-    margin-left: 5em;
 }
 
 /* media queries below */
