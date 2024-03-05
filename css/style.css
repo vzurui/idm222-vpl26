@@ -364,7 +364,7 @@ hr.solid {
 .bio-pfp {
     border-radius: 400px;
     border: 3px solid var(--burnt-umber);
-    object-position: 0.05cm 0.08cm;
+    object-position: 0.05cm 0.04cm;
     width: 50%;
     height: auto;
     margin: 2em 1em;
@@ -380,7 +380,7 @@ hr.solid {
 .headshot {
     width: 80%;
     height: auto;
-    margin: 2em;
+    margin: 0;
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
@@ -531,69 +531,38 @@ and (min-width: 1200px) {
 
 
 @media screen 
-and (min-width: 400px) { /* about page media screens */
+and (max-width: 450px) { /* about page media screens */
 
-    /* .full-about {
+     .full-about {
         background-color: yellowgreen;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .bio-pfp {
-        width: 20%;
-        height: auto;
-    }
+     }
 
     .headshot {
-        background: aqua;
-        width: 20%;
-        height: auto;
+        margin: -1em;
     }
-
-    .about-link {
-        margin-right: -20em;
-    } */
 }
 
 @media screen 
-and (min-width: 1000px) {
-    .hi {
-        background: red;
-        font-size: 250%;
+and (min-width: 1000px) and (max-width: 1200px) {
+    .full-about {
+        background-color: cadetblue;
     }
 
-/* 
-    .bio-pfp {
-        border-radius: 400px;
-        border: 3px solid var(--burnt-umber);
-        object-position: 0.08cm 0.08cm;
-        width: 50%;
-        height: auto;
-        margin: 1em 10em;
-    }
-    
-    .full-about {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 6em 0;
-        margin-bottom: -15em;
-        justify-items: center;
-    }
-    
     .headshot {
-        width: 80%;
-        height: auto;
-        margin: 2em 0;
-    } */
-    
+        margin: 0 4em -30em 4em;
+    }
 }
 
 @media screen
 and (min-width: 1200px) {
-    .hi {
-        background: yellow;
-        font-size: 350%;
-    }
+  .full-about {
+    background-color: violet;
+  }
+
+  .headshot {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /* portfolio buttons page media screens */
