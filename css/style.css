@@ -41,7 +41,7 @@
 @font-face {
     font-family: 'urbanist';
     src: url('/fonts/urbanist/Urbanist-Light.ttf') format('truetype');
-    font-weight: lighter;
+    font-weight: light;
 }
 
 @font-face {
@@ -531,25 +531,28 @@ and (min-width: 1200px) {
 
 
 @media screen 
-and (max-width: 450px) { /* about page media screens */
+and (min-width: 450px) { /* about page media screens */
 
      .full-about {
         background-color: yellowgreen;
      }
 
-    .headshot {
-        margin: -1em;
+    .full-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
 @media screen 
-and (min-width: 1000px) and (max-width: 1200px) {
+and (min-width: 1000px) and (max-width: 1100px) {
     .full-about {
         background-color: cadetblue;
     }
 
-    .headshot {
-        margin: 0 4em -30em 4em;
+    .full-about {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -559,9 +562,11 @@ and (min-width: 1200px) {
     background-color: violet;
   }
 
-  .headshot {
-    display: flex;
-    flex-direction: row;
+  .full-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em;
+    padding: 80px;
   }
 }
 
