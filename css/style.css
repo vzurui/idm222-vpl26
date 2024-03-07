@@ -566,7 +566,7 @@ and (min-width: 1200px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em;
-    padding: 80px;
+    padding: 60px;
   }
 }
 
@@ -610,9 +610,10 @@ and (min-width: 1000px) {
 @media screen 
 and (min-width: 1000px) {
         .resume-layout {
-        display: inline-grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 2em;
+        column-gap: 40px;
+        margin: 3em;
 
     } 
 
