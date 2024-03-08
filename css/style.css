@@ -138,6 +138,12 @@ footer {
     border-top: var(--cocoa-brown) solid 6px;
 }
 
+footer p {
+    font-family: var(--font-text);
+    text-align: center;
+    margin: 0;
+}
+
 form {
     font-family: var(--font-text);
     margin: 6em 0;
@@ -324,13 +330,36 @@ hr.solid {
 #home-welcome {
     text-align: center;
     text-decoration: none;
+    animation: colorChange ease 5s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: var(--cocoa-brown)
+    }
+    33% {
+        color: var(--persian-red)
+    }
+    66% {
+        color: var(--burnt-umber)
+    }
+    100% {
+        color: var(--cocoa-brown)
+    }
 }
 
 #home-name {
-    font-size: 300%;
-    text-align: center;
-    margin: 1em 0 0 0;
+    font-size: 220%;
+    display: flex;
+    justify-content: right;
+    margin-top: 0.5em;
     text-decoration: none;
+}
+
+#home-welcome {
+    font-size: 300%;
+    display: flex;
+    justify-content: right;
 }
 
 #home-portfolio {
@@ -340,9 +369,9 @@ hr.solid {
 }
 
 #home-bio {
-   text-align: left; 
-   margin: 6em 0;
-   max-width: 26ch;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 26ch;
 }
 
 .home-portfolio-button {
@@ -356,6 +385,13 @@ hr.solid {
     text-align: right;
     padding: 30px;
 } 
+
+.lower-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 8em 0 0 5em;
+}
 
 /* end of home page styling */
 
@@ -441,8 +477,43 @@ and (min-width: 1200px) {
 } /* end nav bar media queries */
 
 
+/* @media screen
+and (min-width: 500px) { /* start home page media queries */
+        body.intro-page {
+            background-image: url('../graphics/home_mobile.png');
+            background-repeat: no-repeat;
+            background-position: 1cm 2.7cm;
+            background-size: 80% 110%;        
+            height: 90vh;
+        }
+
+        #home-welcome {
+            font-size: 300%;
+            display: flex;
+            justify-content: right;
+        }
+
+        #home-name {
+            font-size: 220%;
+            display: flex;
+            justify-content: right;
+            margin-top: 0.5em;
+        }
+
+        #home-bio {
+            line-height: 1.5;
+            text-align: left;
+        }
+
+        .lower-bio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+} */
+
 @media screen
-and (min-width: 1000px) { /* start home page media queries */
+and (min-width: 1000px) {
    body.intro-page {
     background-image: url('../graphics/home_tablet.png');
     background-repeat: no-repeat;
@@ -607,6 +678,20 @@ and (min-width: 1000px) {
 
 /* resume layout media queries */ 
 
+@media screen
+and (min-width: 400px) {
+    #resume-top p {
+        line-height: 1;
+    }
+}
+
+@media screen
+and (min-width: 800px) {
+    #resume-top p {
+    line-height: 1;
+    }
+}
+
 @media screen 
 and (min-width: 1000px) {
         .resume-layout {
@@ -617,10 +702,10 @@ and (min-width: 1000px) {
 
     } 
 
-    #resume-top {
+    /* #resume-top {
         display: grid;
         justify-content: center;
-    }
+    } */
 /* 
      .resume-skills {
         margin: 15em 0;
