@@ -97,7 +97,7 @@ h1 {
 
 h2 {
     font-family: var(--font-title);
-    margin: 1.5em 0 0 0;
+    margin: 1.5rem 0 0 0;
     letter-spacing: 1px;
     text-decoration: underline;
 }
@@ -119,7 +119,7 @@ nav {
     font-size: 1em;
     font-family: var(--font-title);
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5rem;
     margin: -1em 0 -2.2em 0;
     word-spacing: 0.2em;
 }
@@ -183,7 +183,7 @@ a:hover {
     color: var(--deep-coffee);
 }
 
-input[type=text], select, textarea { /* for styling contact form */
+/* input[type=text], select, textarea { /* for styling contact form
     font-family: "almarai", Arial, Helvetica, sans-serif;
     width: 100%;
     padding: 12px;
@@ -195,7 +195,7 @@ input[type=text], select, textarea { /* for styling contact form */
     resize: vertical 
   }
 
-input[type=submit] { /* for styling contact "submit" page */
+input[type=submit] { /* for styling contact "submit" page 
     background-color: var(--persian-red);
     color: white;
     font-family: "almarai", Arial, Helvetica, sans-serif;
@@ -205,9 +205,9 @@ input[type=submit] { /* for styling contact "submit" page */
     cursor: pointer;
   }
 
-input[type=submit]:hover { /* for different hover color on contact "submit" button */
+input[type=submit]:hover { /* for different hover color on contact "submit" button
     background-color: var(--deep-coffee);
-  }
+  } */
 
 #resume-top p {
     font-size: 110%;
@@ -219,11 +219,11 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
     margin: 2.75em auto;
 }
 
-.form-text {
+/* .form-text {
     text-align: center;
     line-height: 20px;
     margin: 4em 0 -2em 0;
-}
+} */
 
 /* portfolio css section */
 
@@ -256,6 +256,9 @@ section.projects {
     }
 }
 
+a.home-portfolio-button:link {
+    color: var(--soft-peach);
+}
 
 .portfolio-button:hover, .home-portfolio-button:hover {
     background-color: var(--deep-coffee);
@@ -367,6 +370,7 @@ hr.solid {
 }
 
 #home-portfolio {
+    font-family: var(--font-text);
     text-align: right;
     font-size: 110%;
 }
@@ -378,7 +382,7 @@ hr.solid {
 }
 
 .home-portfolio-button {
-    background-color: purple;
+    background-color: var(--persian-red);
     border-radius: 30px;
     color: purple;
     font-size: 25px;
