@@ -40,7 +40,7 @@
 
 @font-face {
     font-family: 'urbanist';
-    src: url('/fonts/urbanist/Urbanist-Light.ttf') format('truetype');
+    src: url('../fonts/urbanist/Urbanist-Light.ttf') format('truetype');
     font-weight: light;
 }
 
@@ -132,9 +132,9 @@ footer {
     color: var(--off-white);
     background-color: var(--burnt-umber);
     font-family: 'urbanist', Arial, Helvetica, sans-serif;
-    padding: 30px;
+    padding: 40px 30px;
     text-align: center;
-    margin: 0 -2em;
+    margin: 2rem -2rem 0 -2rem;
     border-top: var(--cocoa-brown) solid 6px;
 }
 
@@ -211,7 +211,7 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 
 #resume-top p {
     font-size: 110%;
-    line-height: 0.5px;
+    line-height: 10px;
     text-align: center;
 }
 
@@ -280,8 +280,12 @@ section.projects {
     }
 }
 
-.portfolio img:hover {
+/* .portfolio img:hover {
     opacity: 80%;
+} */
+
+.artwork img:hover {
+    opacity: 10%;
 }
 
 #portfolio-intro {
@@ -364,24 +368,23 @@ hr.solid {
 
 #home-portfolio {
     text-align: right;
-    margin: 0 2em -1em 0;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 #home-bio {
     line-height: 1.5;
     text-align: left;
-    max-width: 26ch;
+    max-width: 23ch;
 }
 
 .home-portfolio-button {
-    background-color: var(--persian-red);
-    border-radius: 20px;
-    color: var(--soft-peach);
+    background-color: purple;
+    border-radius: 30px;
+    color: purple;
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 0.75;
-    margin: 2em 2em 2em 4em;
+    margin: 0 0 0 auto;
     text-align: right;
     padding: 30px;
 } 
@@ -389,8 +392,8 @@ hr.solid {
 .lower-bio {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: 8em 0 0 5em;
+    justify-items: left;
+    margin: 0;
 }
 
 /* end of home page styling */
@@ -416,7 +419,7 @@ hr.solid {
 .headshot {
     width: 80%;
     height: auto;
-    margin: 0;
+    margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
@@ -438,8 +441,8 @@ hr.solid {
 } */
 
 .about-bio {
-    padding: 30px;
-    min-width: 50ch;
+    padding: 10px;
+    min-width: 20ch;
 }
 
 a.about-link:link {
