@@ -228,19 +228,19 @@ input[type=submit]:hover { /* for different hover color on contact "submit" butt
 /* portfolio css section */
 
 section.projects {
-    margin: 5em 0;
+    margin: 8rem 0;
 }
 
 .portfolio-button {
     background-color: var(--persian-red);
     text-align: center;
     line-height: 80px;
-    border-radius: 35px;
+    border-radius: 40px;
     color: var(--soft-peach);
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 1;
-    margin: 2em 2em;
+    margin: 2rem 2rem;
     padding: 30px 0;    
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
@@ -286,9 +286,9 @@ section.projects {
 
 #portfolio-intro {
     text-align: center;
-    font-size: 250%;;
+    font-size: 220%;;
     text-decoration: none;
-    margin: 2em;
+    margin: 1rem;
     animation: fadeInSlide ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -476,8 +476,7 @@ and (min-width: 1200px) {
     }
 } /* end nav bar media queries */
 
-
-/* @media screen
+@media screen
 and (min-width: 500px) { /* start home page media queries */
         body.intro-page {
             background-image: url('../graphics/home_mobile.png');
@@ -510,7 +509,7 @@ and (min-width: 500px) { /* start home page media queries */
             flex-direction: column;
             justify-content: center;
         }
-} */
+    }
 
 @media screen
 and (min-width: 1000px) {
@@ -604,9 +603,9 @@ and (min-width: 1200px) {
 @media screen 
 and (min-width: 450px) { /* about page media screens */
 
-     .full-about {
+     /* .full-about {
         background-color: yellowgreen;
-     }
+     } */
 
     .full-about {
         display: flex;
@@ -617,9 +616,9 @@ and (min-width: 450px) { /* about page media screens */
 
 @media screen 
 and (min-width: 1000px) and (max-width: 1100px) {
-    .full-about {
+    /* .full-about {
         background-color: cadetblue;
-    }
+    } */
 
     .full-about {
         display: flex;
@@ -629,15 +628,25 @@ and (min-width: 1000px) and (max-width: 1100px) {
 
 @media screen
 and (min-width: 1200px) {
-  .full-about {
+  /* .full-about {
     background-color: violet;
-  }
+  } */
 
   .full-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 2em;
     padding: 60px;
+  }
+
+  .about-bio p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .headshot {
+    width: 600px;
+    height: auto;
   }
 }
 
