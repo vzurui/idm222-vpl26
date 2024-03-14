@@ -131,7 +131,7 @@ footer {
     color: var(--off-white);
     background-color: var(--burnt-umber);
     font-family: 'urbanist', Arial, Helvetica, sans-serif;
-    padding: 40px 30px;
+    padding: 30px;
     text-align: center;
     margin: 2rem -2rem 0 -2rem;
     border-top: var(--cocoa-brown) solid 6px;
@@ -374,6 +374,7 @@ hr.solid {
 }
 
 #home-bio {
+    font-size: 90%;
     line-height: 1.5;
     text-align: left;
     max-width: 23ch;
@@ -382,7 +383,6 @@ hr.solid {
 .home-portfolio-button {
     background-color: var(--persian-red);
     border-radius: 30px;
-    color: purple;
     font-size: 25px;
     letter-spacing: 4px;
     line-height: 0.75;
@@ -392,10 +392,10 @@ hr.solid {
 } 
 
 .lower-bio {
-    display: flex;
+    display: grid;
     flex-direction: column;
     justify-items: left;
-    margin: 0;
+    margin-top: 3rem;
 }
 
 /* end of home page styling */
@@ -487,7 +487,7 @@ and (min-width: 320px) { /* start home page media queries */
         body.intro-page {
             background-image: url('../graphics/home_mobile.png');
             background-repeat: no-repeat;
-            background-position: 1cm 2.7cm;
+            background-position: 1cm 2.8cm;
             background-size: 80% 110%;        
             height: 90vh;
         }
@@ -511,9 +511,9 @@ and (min-width: 320px) { /* start home page media queries */
         }
 
         .lower-bio {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: grid;
+            justify-content: right;
+            margin-top: 3rem;
         }
     }
 
@@ -537,7 +537,7 @@ and (min-width: 425px) {
         font-size: 220%;
         display: flex;
         justify-content: right;
-        margin-top: 0.5em;
+        margin-top: 1em;
     }
 
     #home-bio {
@@ -558,12 +558,8 @@ and (min-width: 550px) {
     background-image: url('../graphics/home_tablet.png');
     background-repeat: no-repeat;
     background-position: 1.4cm 2.8cm;
-    background-size: 85% 120%;
-    height: 140vh;
-   }
-
-   footer {
-    margin: 30em -2em 0 -2em;
+    background-size: 85% 130%;
+    height: 120vh;
    }
 
    #home-welcome {
@@ -603,8 +599,8 @@ and (min-width: 550px) {
 
 #home-portfolio {
     font-family: var(--font-text);
-    text-align: right;
-    font-size: 110%;
+    text-align: center;
+    font-size: 120%;
 }
 
 #home-bio {
@@ -630,8 +626,7 @@ and (min-width: 550px) {
 .lower-bio {
     display: grid;
     justify-content: right;
-    grid-template-rows: 1fr auto;
-    /* margin: 5rem 0; */
+    margin: 5rem 0;
     /* row-gap: 20px; */
 }
 
@@ -713,13 +708,14 @@ and (min-width: 1200px) {
   .full-about {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2em;
+    margin: 2rem;
     padding: 60px;
   }
 
   .about-bio p {
     font-size: 1.5rem;
     line-height: 1.2;
+    padding: 10px;
   }
 
   .headshot {
@@ -728,23 +724,7 @@ and (min-width: 1200px) {
   }
 }
 
-/* portfolio buttons page media screens */
 
-@media screen 
-and (min-width: 1200px) {
-    .projects {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin: 3em;
-    }
-
-    .portfolio-button {
-        font-size: 40px;
-        padding: 300px 50px;
-        line-height: 1em;
-        margin: 1em;
-    }
-}
 
 
 /* contact form media queries */
@@ -806,12 +786,28 @@ and (min-width: 1000px) {
 
 /* portfolio media queries */
 
+
 @media screen 
 and (min-width: 1000px) {
-    .portfolio-illustrator {
+    .projects {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio-button {
+        font-size: 40px;
+        padding: 300px 50px;
+        line-height: 1em;
     }
 }
+}
+
+@media screen
+and (min-width: 768px) {
+    .portfolio-illustrator {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 35px;
+        align-items: center;
+    }
 }
