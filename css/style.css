@@ -202,6 +202,7 @@ a.home-portfolio-button:visited {
     width: 100%;
     height: auto;
     margin: 1em 0;
+    object-fit: contain;
 }
 
 .artwork:hover img {
@@ -729,6 +730,11 @@ and (min-width: 700px) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
+        align-items: center;
+    }
+
+    .portfolio-pics p {
+        align-self: center;
     }
 
     .portfolio-title {
