@@ -194,7 +194,7 @@ a:hover {
 /* portfolio css section */
 
 section.projects {
-    margin: 8rem 0;
+    margin: 10.5rem 0;
 }
 
 .portfolio-button {
@@ -242,7 +242,7 @@ a.home-portfolio-button:link {
 
 .artwork:hover img {
     opacity: 0.5;
-    border: 5px solid var(--aubergine);
+    scale: 105%;
 }
 
 @keyframes fadeInAnimation {
@@ -273,6 +273,17 @@ a.home-portfolio-button:link {
         opacity: 1;
         margin-bottom: 0%;
     }
+}
+
+.back-button img {
+    width: 12%;
+    height: auto;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin: 0;
 }
 
 /* end portfolio css section */
