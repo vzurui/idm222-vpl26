@@ -26,6 +26,8 @@
 /* fonts used above */
 
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -83,7 +85,7 @@ li {
     font-family: var(--font-text);
 }
 
-nav {
+nav { /* do i need this?*/
     font-size: 120%;
     font-family: var(--font-title);
     text-align: right;
@@ -143,15 +145,119 @@ a:hover {
     color: var(--deep-coffee);
 }
 
+/* hamburger menu */
+#burger-menu {
+  height: 27px;
+  width: 27px;
+  margin-top: -1rem;
+  position: relative;
+  z-index:2;
+}
+
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+  background: var(--burnt-umber);
+  display: block;
+  height: 4px;
+  opacity: 1;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+
+#burger-menu span:before,
+#burger-menu span:after {
+  content: "";
+}
+
+#burger-menu span {
+  top: 13px;
+  width: 25px;
+  border-radius: 90px;
+}
+
+#burger-menu span:before {
+  left: 0px;
+  top: -10px;
+  width: 25px;
+  border-radius: 90px;
+}
+
+#burger-menu span:after {
+  left: 0px;
+  top: 10px;
+  width: 25px;
+  border-radius: 90px;
+
+}
+
+#burger-menu.close span {
+    background: var(--off-white);
+  transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+
+#burger-menu.close span:before {
+  top: 0px;
+  transform: rotate(90deg);
+  width: 27px;
+  background: var(--off-white);
+}
+
+#burger-menu.close span:after {
+  top: 0px;
+  right: 0;
+  transform: rotate(90deg);
+  opacity:0;
+  width:0;
+}
+
+#menu {
+  z-index:1;
+  min-width:100%;
+  min-height:100%;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  text-align:center;
+  padding-top: 90px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+#menu.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  background: var(--deep-coffee);
+}
+
+#menu li {
+  list-style:none;
+  margin: 2em 0;
+}
+#menu a {
+  color: var(--off-white);
+  font-size: 32px;
+  margin-bottom:30px;
+  text-decoration:none;
+}
+
+/* resume section */
+
 #resume-top p {
+    margin: 2rem 0;
     font-size: 110%;
-    line-height: 10px;
     text-align: center;
 }
 
 .experience {
     margin: 2.75em auto;
 }
+
 
 /* portfolio css section */
 
@@ -281,15 +387,13 @@ a.back-button {
     justify-content: left;
 }
 
-
-
 /* end portfolio css section */
 
 /* home page */
 
 hr.solid {
     border-top: var(--burnt-umber) solid 5px;
-    margin: -1em -2em 0 -4em;
+    margin: -2em -2em 0 -4em;
     animation: slide-in linear 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -343,10 +447,13 @@ hr.solid {
     font-family: var(--font-text);
     text-align: right;
     font-size: 110%;
+    line-height: 3;
 }
 
+
 #home-bio {
-    font-size: 90%;
+    font-size: 85%;
+    margin-top: 1rem;
     line-height: 1.5;
     text-align: left;
     max-width: 23ch;
@@ -367,12 +474,16 @@ hr.solid {
     display: grid;
     flex-direction: column;
     justify-items: left;
-    margin-top: 3rem;
+    margin-top: 6rem;
 }
 
 /* end of home page styling */
 
 /* about page stylings */
+
+.full-about {
+    margin: 2rem 0;
+}
 
 .bio-pfp {
     border-radius: 400px;
@@ -382,22 +493,16 @@ hr.solid {
     height: auto;
     margin: 2em 1em;
 }
-/*
-.full-about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 6em 0;
-    justify-items: center;
-} */
+
 
 .headshot {
     width: 80%;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: grid;
     grid-template-rows: 1fr;
     justify-items: center;
-     animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 
@@ -459,9 +564,9 @@ and (min-width: 320px) { /* start home page media queries */
         body.intro-page {
             background-image: url('../graphics/home_mobile.png');
             background-repeat: no-repeat;
-            background-position: 1cm 2.8cm;
+            background-position: 1cm 2cm;
             background-size: 80% 110%;        
-            height: 90vh;
+            height: 82vh;
         }
 
         #home-welcome {
@@ -482,6 +587,8 @@ and (min-width: 320px) { /* start home page media queries */
             text-align: left;
         }
 
+    
+
         .lower-bio {
             display: grid;
             justify-content: right;
@@ -494,7 +601,7 @@ and (min-width: 425px) {
     body.intro-page {
         background-image: url('../graphics/home_mobile.png');
         background-repeat: no-repeat;
-        background-position: 1cm 2.9cm;
+        background-position: 1cm 2cm;
         background-size: 80% 110%;        
         height: 90vh;
     }
@@ -525,7 +632,7 @@ and (min-width: 425px) {
 }
 
 @media screen
-and (min-width: 550px) {
+and (min-width: 700px) {
    body.intro-page {
     background-image: url('../graphics/home_tablet.png');
     background-repeat: no-repeat;
@@ -645,17 +752,17 @@ and (min-width: 1200px) {
 } /* end home page media screens */
 
 
-@media screen 
-and (min-width: 450px) { /* about page media screens */
+/* @media screen 
+and (min-width: 450px) { 
 
     .full-about {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-}
+} */
 
-@media screen 
+@media screen /* about page media screens */
 and (min-width: 1000px) and (max-width: 1100px) {
 
     .full-about {
@@ -704,12 +811,12 @@ and (min-width: 1000px) {
 
 /* resume layout media queries */ 
 
-@media screen
+/* @media screen
 and (min-width: 400px) {
     #resume-top p {
         line-height: 1;
     }
-}
+} */
 
 @media screen
 and (min-width: 700px) {
@@ -792,3 +899,4 @@ and (min-width: 1000px) {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+

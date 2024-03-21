@@ -8,18 +8,22 @@
         <link rel="stylesheet" href="css/style.css">
       </head>
   <body>    
-    <nav class="search">
-        <a href="about.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="portfolio.html">Portfolio</a>
-      </nav>
-
     <header>
-      <div>
-        <a href="index.html"><h1>Home</h1></a>
-        <hr class="solid">
+      <div id="burger-menu">
+        <span></span>
+      </div>
+      
+      <div id="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+          </ul>
       </div>
     </header>
+    
+  <hr class="solid">
 
     <section class="projects">
       <h2 id="portfolio-intro">Check out my work!</h2>
@@ -30,7 +34,7 @@
         <a class="portfolio-link" href="physical-art.html">Physical Art</a>
       </div>
     </section>
-
+    <script src="scripts/main.js"></script>
     <footer>
       <small>Thanks for visiting!</small>
       <small>&#169; Vy Le</small>
