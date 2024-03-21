@@ -198,7 +198,7 @@ a.home-portfolio-button:visited {
     scale: 105%;
 }
 
- .portfolio-pics img {
+.portfolio-pics img {
     width: 100%;
     height: auto;
     margin: 1em 0;
@@ -237,6 +237,10 @@ a.home-portfolio-button:visited {
         opacity: 1;
         margin-bottom: 0%;
     }
+}
+
+a.back-button {
+    margin: 0 -2rem 0 0;
 }
 
 .back-button img {
@@ -732,11 +736,20 @@ and (min-width: 700px) {
     }
 
     .portfolio-header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        justify-content: left;
         margin: 0;
-        padding: 0 150px;
     } 
+
+    section.projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-button {
+        padding: 30px;
+        margin: 2rem 5rem;
+    }
 /* 
     .back-button img {
         width: 20%;
