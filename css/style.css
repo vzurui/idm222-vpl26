@@ -111,7 +111,6 @@ footer p {
 }
 
 header {
-    /* border-bottom: 3px solid var(--burnt-umber); */
     margin: 0 0 3em 0;
 }
 
@@ -202,13 +201,22 @@ a.home-portfolio-button:visited {
     width: 100%;
     height: auto;
     margin: 1em 0;
-    object-fit: contain;
+   animation: fadeInAnimation ease 2s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
 }
 
 .artwork:hover img {
-    opacity: 0.5;
-    scale: 105%;
-}
+filter: opacity(50%);}
 
 @keyframes fadeInAnimation {
     0% {
@@ -224,15 +232,29 @@ a.home-portfolio-button:visited {
     font-size: 220%;;
     text-decoration: none;
     margin: 1rem;
-    animation: fadeInSlide ease 2s;
-    animation-iteration-count: 1;
+    animation: fadeInSlide ease 1.5s 1, colorChange ease 2.5s infinite;
     animation-fill-mode: forwards;
+}
+
+@keyframes colorChange {
+    0% {
+        color: var(--cocoa-brown)
+    }
+    33% {
+        color: var(--persian-red)
+    }
+    66% {
+        color: var(--burnt-umber)
+    }
+    100% {
+        color: var(--cocoa-brown)
+    }
 }
 
 @keyframes fadeInSlide {
     0% {
         opacity: 0;
-        margin-top: 100%;
+        margin-top: 70%;
     }
     100% {
         opacity: 1;
@@ -690,7 +712,7 @@ and (min-width: 400px) {
 }
 
 @media screen
-and (min-width: 800px) {
+and (min-width: 700px) {
     #resume-top p {
     line-height: 1;
     }
@@ -765,8 +787,8 @@ and (min-width: 700px) {
 
 @media screen
 and (min-width: 1000px) {
-    .portfolio-illustrator {
+    .portfolio-pics {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
