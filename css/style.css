@@ -83,7 +83,7 @@ li {
     font-family: var(--font-text);
 }
 
-nav { /* do i need this?*/
+nav { 
     font-size: 120%;
     font-family: var(--font-title);
     text-align: right;
@@ -149,8 +149,8 @@ a:hover {
 
 /* hamburger menu */
 #burger-menu {
-  height: 27px;
-  width: 27px;
+  height: 50px;
+  width: 50px;
   margin-top: -1rem;
   position: relative;
   z-index:2;
@@ -190,7 +190,6 @@ a:hover {
   top: 10px;
   width: 25px;
   border-radius: 90px;
-
 }
 
 #burger-menu.close span {
@@ -254,8 +253,12 @@ ul.burger-lists {
 
 /* resume section */
 
-#resume-top p {
+#resume-top {
     margin: 2rem 0;
+}
+
+#resume-top p {
+    line-height: 1.7;
     font-size: 110%;
     text-align: center;
 }
@@ -313,9 +316,8 @@ a.home-portfolio-button:visited {
     width: 100%;
     height: auto;
     margin: 1em 0;
-   animation: fadeInAnimation ease 2s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
+    animation: fadeInAnimation ease 2s 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -391,6 +393,7 @@ a.back-button {
 .portfolio-header {
     display: flex;
     justify-content: left;
+    margin: 2rem 0 1rem 0;
 }
 
 /* end portfolio css section */
