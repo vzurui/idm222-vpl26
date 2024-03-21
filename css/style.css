@@ -51,7 +51,7 @@ body {
 p {
     font-family: var(--font-text);
     text-align: justify;
-    line-height: 20px;
+    line-height: 25px;
 }
 
 h1 {
@@ -65,7 +65,7 @@ h1 {
 
 h2 {
     font-family: var(--font-title);
-    margin: 1.5rem 0 0 0;
+    margin: 2rem 0 0.5rem 0;
     letter-spacing: 1px;
     text-decoration: underline;
 }
@@ -252,6 +252,9 @@ ul.burger-lists {
 }
 
 /* resume section */
+.resume-layout {
+    margin: auto 1.5rem;
+}
 
 #resume-top {
     margin: 2rem 0;
@@ -526,6 +529,7 @@ hr.solid {
 }
 
 .about-bio {
+    margin: 1rem 0;
     padding: 10px;
     min-width: 20ch;
 }
@@ -536,17 +540,6 @@ a.about-link:link {
 }
 
 /* media queries below */
-
-/* min 425 width */
-
-@media screen
-and (min-width: 425px) { /* start nav bar media queries */
-    .search {
-        font-size: 150%;
-        word-spacing: 10px;
-        text-align: right;
-    }
-}
 
 @media screen
 and (min-width: 1000px) {
@@ -571,7 +564,7 @@ and (min-width: 320px) { /* start home page media queries */
         body.intro-page {
             background-image: url('../graphics/home_mobile.png');
             background-repeat: no-repeat;
-            background-position: 1cm 2cm;
+            background-position: 1cm 2.6cm;
             background-size: 80% 110%;        
             height: 82vh;
         }
@@ -590,6 +583,7 @@ and (min-width: 320px) { /* start home page media queries */
         }
 
         #home-bio {
+            margin-top: -0.5rem;
             line-height: 1.5;
             text-align: left;
         }
@@ -599,7 +593,7 @@ and (min-width: 320px) { /* start home page media queries */
         .lower-bio {
             display: grid;
             justify-content: right;
-            margin-top: 3rem;
+            margin-top: 4rem;
         }
     }
 
@@ -608,7 +602,7 @@ and (min-width: 425px) {
     body.intro-page {
         background-image: url('../graphics/home_mobile.png');
         background-repeat: no-repeat;
-        background-position: 1cm 2cm;
+        background-position: 1cm 2.6cm;
         background-size: 80% 110%;        
         height: 90vh;
     }
@@ -629,7 +623,7 @@ and (min-width: 425px) {
     #home-bio {
         line-height: 1.5;
         text-align: left;
-        margin: 5rem 0;
+        margin: 3rem 0;
     }
 
     .lower-bio {
@@ -644,7 +638,7 @@ and (min-width: 700px) {
     body.intro-page {
         background-image: url('../graphics/home_tablet.png');
         background-repeat: no-repeat;
-        background-position: 1.4cm 2cm;
+        background-position: 1.4cm 2.7cm;
         background-size: 85% 130%;
         height: 120vh;
     }
@@ -683,7 +677,7 @@ and (min-width: 700px) {
         line-height: 1.5;
         text-align: left;
         max-width: 29ch;
-        margin: 8rem 0 0 0;
+        margin: 5rem 0 0 0;
     }
 
     .home-portfolio-button {
@@ -710,7 +704,7 @@ and (min-width: 1200px) {
     body.intro-page {
         background-image: url('../graphics/home_desktop.png');
         background-repeat: no-repeat;
-        background-position: 1cm 2cm;
+        background-position: 1cm 2.8cm;
         background-size: 100% 200%;
         height: 120vh;
     }
@@ -752,32 +746,33 @@ and (min-width: 1200px) {
 
 } /* end home page media screens */
 
-@media screen /* about page media screens */
-and (min-width: 1000px) {
 
-    .full-about {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media screen
+@media screen   /* about page media screens */
 and (min-width: 1200px) {
 
   .full-about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 60%;
+    column-gap: 20px;
     margin: 2rem;
     padding: 60px;
   }
 
   .about-bio p {
-    font-size: 1.5rem;
-    line-height: 1.2;
-    padding: 10px;
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding: 40px;
+  }
+
+   .bio-pfp {
+    margin-left: 9rem;
+    justify-content: center;
   }
 
   .headshot {
+    display: flex;
+    flex-direction: column;
+    margin-left: -6rem;
     width: 600px;
     height: auto;
   }
@@ -804,7 +799,7 @@ and (min-width: 1000px) {
 @media screen
 and (min-width: 700px) {
     #resume-top p {
-    line-height: 1;
+    line-height: 2;
     }
 }
 
