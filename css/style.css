@@ -23,8 +23,6 @@
     font-weight: bold;
 }
 
-/* fonts used above */
-
 * {
     padding: 0;
     margin: 0;
@@ -62,7 +60,7 @@ h1 {
     font-family: var(--font-title);
     letter-spacing: 3px;
     text-align: left;
-    margin: -0.9em 0 1em -0.5em;
+    margin: -1.1em 0 1em -0.5em;
 }
 
 h2 {
@@ -114,6 +112,10 @@ footer p {
 
 header {
     margin: 0 0 3em 0;
+}
+
+.large-nav-bar {
+    display: none;
 }
 
 a.portfolio-link:link {
@@ -226,7 +228,6 @@ a:hover {
   text-align:center;
   padding-top: 90px;
   transition: all 0.3s ease-in-out;
-  
 }
 
 #menu.overlay {
@@ -267,7 +268,7 @@ ul.burger-lists {
 /* portfolio css section */
 
 section.projects {
-    margin: 10.5rem 0;
+    margin: 11.5rem 0;
 }
 
 .portfolio-button {
@@ -749,7 +750,7 @@ and (min-width: 1200px) {
 } /* end home page media screens */
 
 @media screen /* about page media screens */
-and (min-width: 1000px) and (max-width: 1100px) {
+and (min-width: 1000px) {
 
     .full-about {
         display: flex;
@@ -796,13 +797,6 @@ and (min-width: 1000px) {
 }
 
 /* resume layout media queries */ 
-
-/* @media screen
-and (min-width: 400px) {
-    #resume-top p {
-        line-height: 1;
-    }
-} */
 
 @media screen
 and (min-width: 700px) {
@@ -871,11 +865,6 @@ and (min-width: 700px) {
         padding: 30px;
         margin: 1rem 5rem;
     }
-/* 
-    .back-button img {
-        width: 20%;
-        height: 60%;
-    } */
 }
 
 @media screen
@@ -883,6 +872,17 @@ and (min-width: 1000px) {
     .portfolio-pics {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen 
+and (min-width: 1000px) {
+    .large-nav-bar {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
     }
 }
 
