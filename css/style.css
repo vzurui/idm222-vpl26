@@ -795,7 +795,6 @@ and (min-width: 1000px) {
         align-self: center;
     }
 
-    
 
     #button-layout {
         display: grid;
@@ -837,7 +836,7 @@ and (min-width: 1200px) {
         font-size: 350%;
     }
 
-    #home-bio {
+    p#home-bio {
         font-size: 175%;
         line-height: 1.8;
         max-width: 40ch;
