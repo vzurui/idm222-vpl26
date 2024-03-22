@@ -796,7 +796,6 @@ and (min-width: 1000px) {
         align-self: center;
     }
 
-
     #button-layout {
         display: grid;
         grid-template-columns: 1fr 1fr;
