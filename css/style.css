@@ -611,7 +611,8 @@ and (min-width: 425px) { /* home page */
         margin-top: 1em;
     }
 
-    #home-bio {
+    p#home-bio {
+        font-size: 98%;
         line-height: 1.5;
         text-align: left;
         margin: 3rem 0;
@@ -657,7 +658,7 @@ and (min-width: 700px) {
         font-size: 240%;
         display: flex;
         justify-content: right;
-        margin-top: 0.5em;
+        margin-top: -0.5rem;
         text-decoration: none;
     }
 
@@ -672,12 +673,12 @@ and (min-width: 700px) {
         font-size: 150%;
     }
 
-    #home-bio {
-        font-size: 110%;
+    p#home-bio {
+        font-size: 130%;
         line-height: 1.5;
         text-align: left;
         max-width: 29ch;
-        margin: 5rem 0 0 0;
+        margin-top: -2rem;
     }
 
     .home-portfolio-button {
@@ -696,11 +697,11 @@ and (min-width: 700px) {
         display: grid;
         justify-content: right;
         justify-items: center;
-        margin: 5rem 0;
+        margin: 4rem 0;
     }
 
-        #resume-top p { /* resume page */
-    line-height: 2;
+    #resume-top p { /* resume page */
+        line-height: 2;
     }
 
     .portfolio-pics { /* portfolio page */
